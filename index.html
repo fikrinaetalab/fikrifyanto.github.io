@@ -1,61 +1,8 @@
-<!-- <html>
-<head>
-<title>LUV U</title>
-
-<script type="text/javascript">
-flag=1
-function f1()
-{
-    alert("ALlhamdulillah... kamu mau. Otw sukuran..")
-}
-function f()
-{
-    if(flag==1)
-        {
-            Bn.style.top=400
-            Bn.style.left=300
-            flag=2
-        }
-    else if(flag==2)
-        {
-            Bn.style.top=400
-            Bn.style.left=50
-            flag=3
-        }
-    else if(flag==3)
-        {
-            Bn.style.top=370
-            Bn.style.left=166
-            flag=1
-        }
-}
-</script>
-
-</head>
-<body>
-    <h1> Hallo, Tante? <h1>
-    <img alt="EvilicaCell" src="tenor.gif" height="200" />
-    <h1 style="#">Mau jadi pacar aku gak?</h1>
-    <div id="By" style="position:absolute; left:64px; top:370px; width:210px;
-    height:210px;">
-    <input type="button" value=" YA " onClick="f1()" />
-    </div>
-    <div ID="Bn" style="position:absolute; left:166px; top:370px; width:210px; height:210px;">
-    <input type="button" value=" TIDAK " onMouseOver="f()" />
-    </div>
-</body>
-</html> -->
-
-
-
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="app.min.css">
 
     <style>
@@ -70,35 +17,53 @@ function f()
         .btn-danger:hover {
             background-color:#dc3545 !important;
         }
+
+        .intro {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 
     <title>LUV U!</title>
   </head>
   <body>
 
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col text-center">
-                <h1>Hallo, Tante?</h1>
-                <img src="tenor.gif"/>
-                <h3>Mau jadi pacar aku gak?</h3>
+    <div id="intro" class="intro">
+        <h5 class="text-center centered">Mangga,<br>crot keun dimana wae, kang.<br>Eh, pencet dimana wae.</h5>
+    </div>
+
+    <div id="reff" class="d-none">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <h1>Hallo, Tante?</h1>
+                    <img src="tenor.gif"/>
+                    <h3>Mau jadi pacar aku gak?</h3>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col text-center">
-                <button class="btn btn-primary" onclick="alhamdulillah(this)">MAUUUU!!!</button>
-                <button class="btn btn-danger gakKena display" data-id="1" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn btn-primary" onclick="alhamdulillah(this)">MAUUUU!!!</button>
+                    <button class="btn btn-danger gakKena display" data-id="1" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <button class="btn btn-danger my-4 mx-3 gakKena" data-id="2" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
-                <button class="btn btn-danger my-4 mx-4 gakKena" data-id="3" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
-                <button class="btn btn-danger my-4 mx-5 gakKena" data-id="4" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
-                <button class="btn btn-danger my-4 mx-1 gakKena" data-id="5" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
-                <button class="btn btn-danger my-4 mx-5 gakKena" data-id="6" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
-                <button class="btn btn-danger my-4 mx-3 gakKena" data-id="7" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
-                <button class="btn btn-danger my-4 mx-4 gakKena" data-id="8" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-danger my-4 mx-3 gakKena" data-id="2" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+                    <button class="btn btn-danger my-4 mx-4 gakKena" data-id="3" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+                    <button class="btn btn-danger my-4 mx-5 gakKena" data-id="4" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+                    <button class="btn btn-danger my-4 mx-1 gakKena" data-id="5" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+                    <button class="btn btn-danger my-4 mx-5 gakKena" data-id="6" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+                    <button class="btn btn-danger my-4 mx-3 gakKena" data-id="7" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+                    <button class="btn btn-danger my-4 mx-4 gakKena" data-id="8" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
+                </div>
             </div>
         </div>
     </div>
@@ -201,6 +166,11 @@ function f()
                 }, 3000);
             }, 3000);
         }
+
+        $("#intro").click(function() {
+            $("#reff").removeClass("d-none");
+            $("#intro").addClass("d-none");
+        });
 
         console.log("BANGSAT KAU!!!");
     </script>
