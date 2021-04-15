@@ -86,7 +86,7 @@ function f()
         </div>
         <div class="row">
             <div class="col text-center">
-                <button class="btn btn-primary">MAUUUU!!!</button>
+                <button class="btn btn-primary" onclick="alhamdulillah(this)">MAUUUU!!!</button>
                 <button class="btn btn-danger gakKena display" data-id="1" onclick="eitsGakKena(this)" onmouseover="eitsGakKena(this)">NGGAK!</button>
             </div>
         </div>
@@ -149,6 +149,57 @@ function f()
                 });
             }
             dibilanginPakUstadz++;
+        }
+
+        function alhamdulillah()
+        {
+            swal({
+                title: "Mengkalkulasi rasa sayangmu...",
+                text: "Sabar ya...",
+                icon: "loader.gif",
+                closeOnClickOutside: false,
+                buttons: false,
+                onOpen: function () {
+                    swal.showLoading();
+                }
+            });
+
+            setTimeout(function(){
+                swal.close();
+                swal({
+                    title: "Menyimpan data kenangan kita...",
+                    text: "Deg-degan woe!...",
+                    icon: "loader.gif",
+                    closeOnClickOutside: false,
+                    buttons: false,
+                    onOpen: function () {
+                        swal.showLoading();
+                    }
+                });
+
+                setTimeout(function(){
+                    swal.close();
+
+                    setTimeout(function(){
+                        swal({
+                            title: "Makasih ya udah nerima akuu :) ...",
+                            icon: "horee.gif",
+                            closeOnClickOutside: false,
+                            buttons: false,
+                            onOpen: function () {
+                                swal.showLoading();
+                            }
+                        });
+
+                        setTimeout(function(){
+                            let length = 1000;
+                            for (i = 0; i < length; i++) {
+                                alert('aku sayang kamu! :D');
+                            }
+                        }, 3000);
+                    }, 3000);
+                }, 3000);
+            }, 3000);
         }
 
         console.log("BANGSAT KAU!!!");
