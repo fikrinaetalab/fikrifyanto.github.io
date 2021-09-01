@@ -36,14 +36,14 @@
   <body>
 
     <div id="intro" class="intro">
-        <h5 class="text-center centered">Mangga,<br>crot keun dimana wae, kang.<br>Eh, pencet dimana wae.</h5>
+        <h5 class="text-center centered">Mangga,<br>klik dimana wae neng</h5>
     </div>
 
     <div id="reff" class="d-none">
         <div class="container">
             <div class="row mt-5">
                 <div class="col text-center">
-                    <h1>Hallo, Tante?</h1>
+                    <h1>Hallo, Tante!</h1>
                     <img src="tenor.gif"/>
                     <h3>Mau jadi pacar aku gak?</h3>
                 </div>
@@ -99,18 +99,21 @@
                     title: "Ingat!",
                     text: "Kata pak ustadz, gak boleh nolak rezeki!", 
                     icon: "warning",
+                    allowOutsideClick: false,
                 });
             } else if(dibilanginPakUstadz == 1) {
                 swal({
                     title: "Aku ingetin lagi ya!",
                     text: "Kata pak ustadz gak boleh nolak rezeki ihh!", 
                     icon: "warning",
+                    allowOutsideClick: false,
                 });
             } else if(dibilanginPakUstadz == 2) {
                 swal({
                     title: "Ngerti gak sih!",
                     text: "Kata pak ustadz, gak boleh nolak rezeki! Peka atuh euy! Peka!", 
                     icon: "warning",
+                    allowOutsideClick: false,
                 });
             }
             dibilanginPakUstadz++;
